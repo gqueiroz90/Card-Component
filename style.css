@@ -21,6 +21,7 @@ body{
 
 .left{
     display: flex;
+    flex-direction: column;
     width: 50%;
     height: 100%;
 }
@@ -112,4 +113,23 @@ img{
 
 svg{
     padding-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+	
+    .container{
+        flex-direction: column;                    
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: 600px;
+    }
+
+    img, .right{
+        border-radius: 0px;
+    }
+
+    .pricetobuy{
+        margin: 0px 0px 0px 50px;
+    }
 }
